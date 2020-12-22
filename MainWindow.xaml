@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cryptAes256bts"
         mc:Ignorable="d"
-        Title="Crypt AES" Height="425.148" Width="653" ResizeMode="NoResize" WindowStyle="None">
+        Title="Crypt AES" Height="539" Width="653" ResizeMode="NoResize" WindowStyle="None">
     <Window.Resources>
         <Style x:Key="ButtonFocusVisual">
             <Setter Property="Control.Template">
@@ -200,7 +200,7 @@
             </StackPanel>
         </Grid>
 
-        <StackPanel x:Name="sk1" HorizontalAlignment="Left" Height="146" Margin="23,36,0,0" VerticalAlignment="Top" Width="119" Background="#FF5B5B5B">
+        <StackPanel x:Name="sk1" HorizontalAlignment="Left" Height="309" Margin="23,36,0,0" VerticalAlignment="Top" Width="119" Background="#FF5B5B5B">
             <TextBox Text="0" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
             <TextBox Text="1" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
             <TextBox Text="2" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
@@ -209,11 +209,20 @@
             <TextBox Text="5" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
             <TextBox Text="6" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
             <TextBox Text="7" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
+            <TextBox Text="8" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
+            <TextBox Text="9" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
+            <TextBox Text="10" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
+            <TextBox Text="11" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
+            <TextBox Text="12" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
+            <TextBox Text="13" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
+            <TextBox Text="14" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
+            <TextBox Text="15" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
+            <TextBox Text="16" Background="#FF5B5B5B" Foreground="#FF62FDE8" />
         </StackPanel>
         <Button x:Name="button" Style="{DynamicResource bt1}" Content="Crypt" HorizontalAlignment="Left" Height="32" Margin="171,36,0,0" VerticalAlignment="Top" Width="118" Click="button_Click"/>
-        <TextBox IsReadOnly="True" TextWrapping="Wrap" x:Name="nocrypt" HorizontalAlignment="Left" Height="164" Margin="23,221,0,0"  Text="00 00 00 00 00 00 00 00" VerticalAlignment="Top" Width="199" FontFamily="Courier New" Background="#FF2F3032" VerticalScrollBarVisibility="Visible" Foreground="#FF5BF0F0"/>
-        <TextBox IsReadOnly="True" TextWrapping="Wrap" x:Name="crypt" HorizontalAlignment="Left" Height="164" Margin="433,221,0,0" Text="00 00 00 00 00 00 00 00" VerticalAlignment="Top" Width="197" FontFamily="Courier New" Background="#FF2F3032" VerticalScrollBarVisibility="Visible" Foreground="#FF5BF0F0"/>
-        <Label x:Name="label" Content="Non crypté" HorizontalAlignment="Left" Height="27" Margin="23,186,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.5,0.5" Foreground="#FFB9F7F4">
+        <TextBox IsReadOnly="True" TextWrapping="Wrap" x:Name="nocrypt" HorizontalAlignment="Left" Height="164" Margin="375,363,0,0"  Text="00 00 00 00 00 00 00 00" VerticalAlignment="Top" Width="199" FontFamily="Courier New" Background="#FF2F3032" VerticalScrollBarVisibility="Visible" Foreground="#FF5BF0F0"/>
+        <TextBox IsReadOnly="True" TextWrapping="Wrap" x:Name="crypt" HorizontalAlignment="Left" Height="164" Margin="375,158,0,0" Text="00 00 00 00 00 00 00 00" VerticalAlignment="Top" Width="197" FontFamily="Courier New" Background="#FF2F3032" VerticalScrollBarVisibility="Visible" Foreground="#FF5BF0F0"/>
+        <Label x:Name="label" Content="Non crypté" HorizontalAlignment="Left" Height="27" Margin="375,328,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.5,0.5" Foreground="#FFB9F7F4">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -223,18 +232,28 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label x:Name="label1" Content="crypté 256 bits" HorizontalAlignment="Left" Height="31" Margin="433,185,0,0" VerticalAlignment="Top" Width="93" Foreground="#FFB9F7F4"/>
+        <Label x:Name="label1" Content="crypté 256 bits" HorizontalAlignment="Left" Height="31" Margin="375,122,0,0" VerticalAlignment="Top" Width="93" Foreground="#FFB9F7F4"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="22" Margin="308,43,0,0" TextWrapping="Wrap" Text="Clé de cryptage 32 char max" VerticalAlignment="Top" Width="292" Foreground="#FF62FDE8" Background="#FF5B5B5B"/>
-        <TextBox IsReadOnly="True"  TextWrapping="Wrap" x:Name="crypt128" HorizontalAlignment="Left" Height="164" Margin="227,221,0,0" Text="00 00 00 00 00 00 00 00" VerticalAlignment="Top" Width="201" FontFamily="Courier New" Background="#FF2F3032" VerticalScrollBarVisibility="Visible" Foreground="#FF5BF0F0"/>
-        <Label x:Name="label1_Copy" Content="crypté 128 bits" HorizontalAlignment="Left" Height="31" Margin="225,185,0,0" VerticalAlignment="Top" Width="90" Foreground="#FFB9F7F4"/>
+        <TextBox IsReadOnly="True"  TextWrapping="Wrap" x:Name="crypt128" HorizontalAlignment="Left" Height="164" Margin="169,158,0,0" Text="00 00 00 00 00 00 00 00" VerticalAlignment="Top" Width="201" FontFamily="Courier New" Background="#FF2F3032" VerticalScrollBarVisibility="Visible" Foreground="#FF5BF0F0"/>
+        <Label x:Name="label1_Copy" Content="crypté 128 bits" HorizontalAlignment="Left" Height="31" Margin="167,122,0,0" VerticalAlignment="Top" Width="90" Foreground="#FFB9F7F4"/>
         <TextBox x:Name="tXbEntier" HorizontalAlignment="Left" Height="24" Margin="308,80,0,0" TextWrapping="Wrap" Text="8" VerticalAlignment="Top" Width="118" Foreground="#FF62FDE8" Background="#FF5B5B5B"/>
         <Label x:Name="Lbnbr" Content="Nbr Entiers à crypter" HorizontalAlignment="Left" Height="28" Margin="171,80,0,0" VerticalAlignment="Top" Width="118" Foreground="#FFB9F7F4"/>
-        <Label x:Name="taille" Content="0" HorizontalAlignment="Left" Height="27" Margin="108,186,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.5,0.5" Foreground="#FFB9F7F4">
+        <Label x:Name="taille" Content="0" HorizontalAlignment="Left" Height="27" Margin="485,327,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.5,0.5" Foreground="#FFB9F7F4">
         </Label>
-        <Label x:Name="taille128" Content="0" HorizontalAlignment="Left" Height="27" Margin="322,186,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.5,0.5" Foreground="#FFB9F7F4"/>
-        <Label x:Name="taille256" Content="0" HorizontalAlignment="Left" Height="27" Margin="543,186,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.5,0.5" Foreground="#FFB9F7F4"/>
-        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Height="23" Margin="225,124,0,0" VerticalAlignment="Top" Width="124" Click="button1_Click"/>
-        <Button x:Name="button2" Content="Button" HorizontalAlignment="Left" Height="24" Margin="511,108,0,0" VerticalAlignment="Top" Width="99" Click="button2_Click"/>
+        <Label x:Name="taille128" Content="0" HorizontalAlignment="Left" Height="27" Margin="264,123,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.5,0.5" Foreground="#FFB9F7F4"/>
+        <Label x:Name="taille256" Content="0" HorizontalAlignment="Left" Height="27" Margin="485,123,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.5,0.5" Foreground="#FFB9F7F4"/>
+        <TextBox IsReadOnly="True" TextWrapping="Wrap" x:Name="nocrypt_128" HorizontalAlignment="Left" Height="164" Margin="173,363,0,0"  Text="00 00 00 00 00 00 00 00" VerticalAlignment="Top" Width="199" FontFamily="Courier New" Background="#FF2F3032" VerticalScrollBarVisibility="Visible" Foreground="#FF5BF0F0"/>
+        <Label x:Name="label_Copy" Content="Non crypté" HorizontalAlignment="Left" Height="27" Margin="173,328,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.5,0.5" Foreground="#FFB9F7F4">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="1.432"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.475"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="taille128nCrypte" Content="0" HorizontalAlignment="Left" Height="27" Margin="264,327,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.5,0.5" Foreground="#FFB9F7F4"/>
 
     </Grid>
 </Window>
