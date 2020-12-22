@@ -1,5 +1,5 @@
 # cryptAes256bts
-Test cryptage AES
+Test chiffrage AES
 Exemple pour chiffrer en AES 128 et 256 des valeurs binaires<br/>
 affiche la taille en octet avant et après le chiffrage
 <br/><br/><br/>
