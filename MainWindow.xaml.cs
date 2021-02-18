@@ -35,10 +35,8 @@ namespace cryptAes256bts
             myAes.BlockSize = 128;
             string key = textBox.Text;
 
-            while (key.Length < 32)
-            {
-                key = key + "o";
-            }
+            key += new string('o', 32 - key.Length);
+
             byte[] tmp = Encoding.UTF8.GetBytes(key);
             Buffer.BlockCopy(tmp, 0, myAes.Key, 0, 32);
             Buffer.BlockCopy(Encoding.UTF8.GetBytes(key), 0, myAes128.Key, 0, 16);
